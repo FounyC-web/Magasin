@@ -1,11 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Founshop</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+
+    <!-- navbar -->
+    <nav class="navbar fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-maroon" href="#">FounShop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FounShop</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Produits</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Histoire de FounShop</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Services client</a>
+          </li>
+            </ul> 
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- section hero -->
+ <div class="hero">
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center hero-text-center">
+            <div class="text-center">
+                <h1 class="fw-bold">FounShop</h1>
+                <p>La diversité à prix malin</p>
+                <button type="button" class="btn btn-primary btn-sm">En savoir plus...</button>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+ <!-- section nos produits -->
+  <section class="container my-5">
+    <h2 class=" text-center mb-4 fw-bold">Nos produits</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/montre-verte.avif" class="card-img-top" alt="Montre connecter verte">
+      <div class="card-body">
+        <h5 class="card-title">DECATHLON</h5>
+        <p class="card-text">Montre connectée multisport cardio - cw500 s verte</p> 
+           <p> Notre équipe a conçu cette montre connectée pour vous suivre au quotidien et mesurer votre activité physique!
+          Atteignez vos objectifs grâce à cette montre connectée intégrant un cardiofréquencemètre qui vous aidera à mesurer l'intensité de vos activités sportives, 
+          votre activité quotidienne et votre sommeil à <strong>35 000 FCFA</strong></p>
+          <a href="#" class="btn btn-primary">Acheter maintenant !</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/running-ecout.avif" class="card-img-top" alt="Ecouteur de Running">
+      <div class="card-body">
+        <h5 class="card-title">DECATHLON</h5>
+        <p class="card-text">DECATHLON ECOUTEURS DE RUNNING TWS 100 - 100% SANS FIL NOIR.</p>
+        <p>Conçus pour les sportifs voulant être complètement libres de leurs mouvements ( 100% sans fil )
+          Une totale liberté de mouvement grâce à ces écouteurs 100% sans fil. Insérés dans le conduit auditif, la qualité sonore est excellente à seulement <strong>27 500 FCFA</strong></p>
+          <a href="#" class="btn btn-primary">Acheter maintenant !</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/parfun.webp" class="card-img-top" alt="Parfum omnia Coral">
+      <div class="card-body">
+        <h5 class="card-title">BVLGARI</h5>
+        <p class="card-text">OMNIA CORAL Eau de toilette</p>
+        <p>Inspiré des teintes chatoyantes du précieux corail rouge, Omnia Coral allie la luminosité parfumée des notes florales à la transparence fraîche des fruits juteux, évoquant l’été, le soleil, la nature resplendissante et les océans lointains….
+           à petit prix <strong>90 000 CFA</strong></p>
+            <a href="#" class="btn btn-primary">Acheter maintenant !</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/camel.avif" class="card-img-top" alt="SAC- DANA Camel : 25202">
+      <div class="card-body">
+        <h5 class="card-title">SAC- DANA</h5>
+        <p class="card-text">Le nouveau Dana est un sac en cuir caractérisé par une texture grainée qui ajoute profondeur et résistance au design. Il possède une structure rigide et deux poignées arrondies qui permettent de le porter confortablement à la main.
+          Le rabat supérieur présente une coupe particulière, avec des ouvertures qui laissent place aux poignées, donnant un aspect élégant et moderne. Le design minimaliste et les lignes épurées le rendent adapté aussi bien aux occasions formelles qu'à un usage quotidien. 
+          Couleur: camel Dimensions : L46 x H29 x P10 cm Cuir véritable, fabriqué en Italie Avec bandoulière réglable et amovible. <strong>100 000 FCFA</strong> le prix</p>
+          <a href="#" class="btn btn-primary">Acheter maintenant !</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- Histoire de FounShop -->
+ <section class="about bg-light py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">À propos de FounShop</h2>
+
+        <p>Bienvenue chez <strong>FounShop</strong>, votre boutique en ligne de confiance où la diversité rencontre la qualité. Créée avec la passion de rendre
+        le shopping plus simple, plus rapide et plus accessible, notre mission est de vous offrir <strong>tout ce dont vous avez besoin en seul endroit</strong>.</p>
+
+        <p>Nous proposons une large sélection de produits- accessoires, high-tech, etc à des <strong>prix abordables</strong>, <strong>fiabilité</strong> et <strong>satisfaction client</strong>.</p>
+            <p class="slogan"><i>FounSho-tout ce qu'il vous faut, au même endroit</i></p>
+    </div>
+ </section>
+
+<!-- section contact -->
+      <section id="contact" class="contact-section mt-5">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4">Contactez-nous</h2>
+          
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="Nom" class="form-label">Nom</label>
+              <input type="text" id="Nom" name="Nom" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email</label>
+              <input type="email" id="Email" name="Email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="Destination d'intérêt" class="form-label">Destination d'intérêt</label>
+              <input type="Destination d'intérêt" id="Destination d'intérêt" name="Destination d'intérêt" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="Message" class="form-label">Message</label>
+              <input type="Message" id="Message" name="Message" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+          </form>
+        </div>
+      </section>
+  </section>
+
+ <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FounShop | Tous droits réservés</p>
+    <a href="https://www.facebook.com" target="_blank" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com" target="_blank" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.Linkedin.com" target="_blank" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.whatsapp.com" target="_blank" aria-level="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.Toktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-Tiktok"></i></a>
+   </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

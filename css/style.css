@@ -1,0 +1,234 @@
+/* styles global */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fff5f5; /* blanc rosé doux */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.navbar{
+    background-color: #e38b8b; /* rose poudré */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #f6d860;/* or doux */
+    text-transform: lowercase;
+    letter-spacing: 1.5px;
+}
+
+.navbar-brand:hover{
+    color: #fff;
+}
+
+.nav-link{
+    color: #000000;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus{
+    color: #f6d860;
+}
+
+.navbar-toggler{
+    border: none;
+    background-color: #f6d860;
+}
+
+.offcanvas-title{
+    color: #f6d860;
+}
+.offcanvas-title:hover{
+    color: #e38b8b;
+}
+
+/* section hero */
+.hero{
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url(../img/boutique.webp) center/ cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f8f9f8;
+}
+
+.hero p{
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.hero .btn{
+    background-color: #f6d860;
+    color: #333;
+    font-weight: 600;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.hero .btn:hover{
+    background-color: #e38b8b;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+h2{
+    color: #e38b8b;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* section produits */
+.card{
+    border: 2px solid #f6d860;
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(.5px);
+    box-shadow: 0 6px 12px rgba(227, 139, 139, 0.4);
+}
+
+/* Titres et texte produits */
+.card-title{
+    color: #e38b8b;
+    font-weight: 600;
+}
+
+.card-text strong{
+    color: #e38b8b;
+}
+
+/* Bouton acheter */
+.card .btn{
+    background-color: #f6d860;
+    color: #333;
+    border: none;
+    transition: background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.card .btn:hover{
+    background-color: #e38b8b;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+/* section à propos */
+.about{
+    background-color: #fbe9e9;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+/* Contact */
+.contact-section{
+    background-color: #fbe9e9;
+    padding: 60px 0;
+    border-top: 5px solid #f6d860;
+}
+
+.contact-section form{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0, 0.1);
+}
+
+.contact-section .btn-primary{
+    background-color:#f6d860;
+    border: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-section .btn-primary:hover{
+    background-color: #e38b8b;
+    color: #fff;
+}
+
+/* footer */
+footer{
+    background-color: #e38b8b;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+  color: #f6d860;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+.w-md-50{
+    width: 50%;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero h1{
+        font-size: 3rem;
+    }
+    
+    .hero p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .hero{
+        height: 70vh;
+    }
+
+    .hero h1{
+        font-size: 2.2rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .card{
+        margin-bottom: 1.5rem;
+    }
+}
